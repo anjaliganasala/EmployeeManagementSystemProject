@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 350px;
+    }
+
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #ffcb05;
+    }
+
+    .login-container marquee {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .login-container h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #ffcb05;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e6b800;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 15px;
+      color: #ffffff;
+    }
+
+    a {
+      color: #ffcb05;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome To Our Dynamic Web Project</h1>
+    <marquee>Java, JSP, Servlet, MySQL,HTML,CSS</marquee>
+    <h3>Login</h3>
+    <form action="login" method="post">
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Enter email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Enter password" required>
+
+      <input type="submit" value="Login">
+    </form>
+    <p>Are you a new user? <a href="signup.jsp">Signup</a></p>
+  </div>
+</body>
+</html>
